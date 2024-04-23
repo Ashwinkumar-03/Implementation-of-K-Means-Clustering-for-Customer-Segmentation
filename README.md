@@ -7,11 +7,17 @@ To write a program to implement the K Means Clustering for Customer Segmentation
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
-## Algorithm
-1. 
-2. 
-3. 
-4. 
+## Algorithm:
+
+1.Import the necessary packages using import statement.
+
+2.Read the given csv file using read_csv() method and print the number of contents to be displayed using df.head().
+
+3.Import KMeans and use for loop to cluster the data.
+
+4.Predict the cluster and plot data graphs.
+
+5.Print the outputs and end the program
 
 ## Program:
 ```
@@ -48,22 +54,19 @@ df1 = data[data["cluster"]==1]
 df2 = data[data["cluster"]==2]
 df3 = data[data["cluster"]==3]
 df4 = data[data["cluster"]==4]
-plt.scatter(df0["Annual Income (k$)"],df0["Spending Score (1-
-100)"],c="red",label="cluster0")
-plt.scatter(df1["Annual Income (k$)"],df1["Spending Score (1-
-100)"],c="black",label="cluster1")
-plt.scatter(df2["Annual Income (k$)"],df2["Spending Score (1-
-100)"],c="blue",label="cluster2")
-plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-
-100)"],c="green",label="cluster3")
-plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-
-100)"],c="magenta",label="cluster4")
+plt.scatter(df0["Annual Income (k$)"],df0["Spending Score (1-100)"],c="red",label="cluster0")
+plt.scatter(df1["Annual Income (k$)"],df1["Spending Score (1-100)"],c="black",label="cluster1")
+plt.scatter(df2["Annual Income (k$)"],df2["Spending Score (1-100)"],c="blue",label="cluster2")
+plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-100)"],c="green",label="cluster3")
+plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"],c="magenta",label="cluster4")
 plt.legend()
-plt.title("Customer Segments")
+plt.title("Customer Segments")
+
 ```
 
 ## Output:
-![K Means Clustering for Customer Segmentation](sam.png)
+### Dataset:
+![image](https://github.com/Ashwinkumar-03/Implementation-of-K-Means-Clustering-for-Customer-Segmentation/assets/118663725/5071bb28-08a0-45e5-8fab-de26f6cedd80)
 
 
 ## Result:
